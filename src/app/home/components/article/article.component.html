@@ -1,12 +1,14 @@
 <article class="article radius">
 	<div class="article__info">
-		El 29 de octubre del 2012. <br>
-		por <span>Ernesto G Bustamante</span><br>
-		3 comentarios<br>
+		{{ article.date }} <br>
+		por <span>{{ article.author }}</span>
+		<br>
+		{{ article.comments }}
+		<br>
 	</div>
 	<div class="article__content">
-		<h2>Las bondades de HTML5</h2>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At expedita voluptatem aut consequuntur modi minima necessitatibus cumque est veritatis vitae maiores neque maxime, sit quaerat, iste iusto deleniti odio dolor!</p>
+		<h2>{{ article.title }}</h2>
+		<p>{{ article.description }}</p>
 		<a href="#">Leer más</a>
 	</div>
 </article>
